@@ -1,0 +1,21 @@
+<div id='chicago_transit_authority' data-bind-class='chicago_transit_authority'>
+  <h2>El Arrival Times</h2>
+  <ul >
+    <li class='train' data-foreach-train='trains'>
+      <span class='route' data-bind-class='train.route'></span>
+      <span class='station' data-bind='train.station | raw'></span>
+      <span class='time' data-bind='train.arrival_time | raw'></span>
+    </li>
+  </ul>
+
+  <h2>Bus Arrival Times</h2>
+  <ul data-foreach-bus>
+    <li>
+      <span data-bind='arrival.stationLine'></span>
+      <span data-bind='arrival.stationName'></span>
+      <span data-bind='arrival.arrivalTime'></span>
+    </li>
+  </ul>
+
+
+</div>

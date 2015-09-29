@@ -1,0 +1,12 @@
+*DS_STORE
+
+# Ignore anything with potentially sensitive information
+config/deploy.rb
+config/secrets.yml
+config/thin.yml
+config/deploy/production.rb
+*.pem
+
+# Ignore annoying history thing
+history.yml
+

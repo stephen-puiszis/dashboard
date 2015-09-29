@@ -1,0 +1,52 @@
+$red: #c60c30;
+$brown: #62361b;
+$blue: #00a1de;
+$green: #009b3a;
+$orange: #f9461c;
+$purple: #522398;
+
+.widget-chicago-transit-authority {
+  background-color: #232426;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+
+
+  h2 {
+    font-weight: 300;
+    text-transform: none;
+    font-size: 24px;
+    border-bottom: 1px solid #eee;
+    margin: 5px 5px;
+  }
+  ul {
+    margin: 20spx 5px 0 5px;
+  }
+
+  span {
+    font-weight: 200;
+    font-size: 16px;
+    vertical-align: top;
+  }
+
+  @mixin route-icon($color) {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    border: solid 1px white;
+    float: left;
+    vertical-align: middle;
+    background-color: $color;
+  }
+
+  .train { min-height: 25px; padding-bottom: 5px; }
+  .station { float: left; }
+  .route { float: left; }
+  .time { float: right; }
+
+  .Brown { @include route-icon($brown); }
+  .Red { @include route-icon($red); }
+  .Blue { @include route-icon($blue); }
+  .Green { @include route-icon($green); }
+  .Orange { @include route-icon($orange); }
+  .Purple { @include route-icon($purple); }
+}
