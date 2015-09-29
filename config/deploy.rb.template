@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'dashboard'
-set :repo_url, 'git@example.com:repo/dashboard.git'
+set :repo_url, 'git@github.com:repo/dashboard.git'
 # set :deploy_to, '/var/www/my_app_name'
 
 # Default branch is :master

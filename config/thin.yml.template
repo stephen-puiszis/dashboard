@@ -1,12 +1,12 @@
 ---
-chdir: /home/dashboard/DEPLOY_FOLDER/current
+chdir: /home/APP_USER/DEPLOY_FOLDER/current
 environment: production
 address: 0.0.0.0
 port: 3000
 timeout: 30
-log: /home/dashboard/DEPLOY_FOLDER/shared/log/thin.log
-pid: /home/dashboard/DEPLOY_FOLDER/shared/pids/thin.pid
-socket: /home/dashboard/DEPLOY_FOLDER/tmp/thin.sock
+log: /home/APP_USER/DEPLOY_FOLDER/shared/log/thin.log
+pid: /home/APP_USER/DEPLOY_FOLDER/shared/pids/thin.pid
+socket: /home/APP_USER/DEPLOY_FOLDER/tmp/thin.sock
 max_conns: 1024
 max_persistent_conns: 100
 require: []
