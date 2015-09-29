@@ -6,7 +6,7 @@ port: 3000
 timeout: 30
 log: /home/APP_USER/DEPLOY_FOLDER/shared/log/thin.log
 pid: /home/APP_USER/DEPLOY_FOLDER/shared/pids/thin.pid
-socket: /home/APP_USER/DEPLOY_FOLDER/tmp/thin.sock
+socket: /home/APP_USER/DEPLOY_FOLDER/shared/tmp/thin.sock
 max_conns: 1024
 max_persistent_conns: 100
 require: []
