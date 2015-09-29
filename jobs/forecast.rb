@@ -1,7 +1,7 @@
 require 'date'
 require 'net/https'
 require 'json'
-require 'pry'
+
 forecast_api_key       = Secrets.forecast["api_key"]
 forecast_location_lat  = Secrets.forecast["lat"]
 forecast_location_long = Secrets.forecast["long"]
