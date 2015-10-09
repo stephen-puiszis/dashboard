@@ -9,6 +9,7 @@ gem 'icalendar'
 gem 'capistrano'
 gem 'capistrano-rvm'
 gem 'capistrano-bundler'
+gem 'therubyracer'
 
 group :development do
   gem 'pry'

@@ -50,6 +50,7 @@ GEM
     i18n (0.7.0)
     icalendar (2.3.0)
     json (1.8.3)
+    libv8 (3.16.14.11)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     method_source (0.8.2)
@@ -79,6 +80,7 @@ GEM
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
     rake (10.4.2)
+    ref (2.0.0)
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
     sass (3.2.19)
@@ -103,6 +105,9 @@ GEM
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
     thin (1.6.3)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0)
@@ -127,6 +132,7 @@ DEPENDENCIES
   json
   nokogiri
   pry
+  therubyracer
 
 BUNDLED WITH
    1.10.6
