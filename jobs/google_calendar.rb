@@ -6,7 +6,7 @@ calendars = {
   athletics: Secrets.google_calendar["athletics"]
 }
 
-SCHEDULER.every '1m', :first_in => 2 do |job|
+SCHEDULER.every '10m', :first_in => 0 do |job|
   calendars.each do |k,v|
     url = URI(v)
     result = Net::HTTP.get(url)
@@ -20,8 +20,7 @@ SCHEDULER.every '1m', :first_in => 2 do |job|
       }
     end.select { |event| event[:start] > DateTime.now }
 
-    events = events.sort { |a, b| a[:start] <=> b[:start] }
-    events = events[0..3]
+    events = events.sort { |a, b| a[:start] <=> b[:start] }[0..3]
 
     send_event("google_calendar_#{k}", { events: events })
   end

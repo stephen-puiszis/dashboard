@@ -14,7 +14,7 @@ class ChicagoTransitData
 
   API_KEY = Secrets.cta_api_key.freeze
   TRAIN_URL = "http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx".freeze
-  BUS_URL = "http".freeze
+  BUS_URL = "http://".freeze # TODO: waiting on Bus API KEY
 
   def initialize(stations, options = {})
     @train_stations = stations[:train]
